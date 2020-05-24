@@ -1,19 +1,12 @@
-package spark_config
-
-import input.inputs.InputUtils
-import output.outputs.OutputUtils
-import transformation.transformations.TransformationUtils
-import com.typesafe.config.ConfigFactory
 import java.nio.file.Paths
 
-import input.Input._
+import com.typesafe.config.ConfigFactory
+import input.inputs.InputUtils
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import cats.implicits._
+import output.outputs.OutputUtils
 import transformation.errors.TransformationError
-import input.Inputs._
-import transformation.Transformations._
-import output.Outputs._
-
+import transformation.transformations.TransformationUtils
+import cats.implicits._
 
 object Main {
   def main(path: String): Unit = {

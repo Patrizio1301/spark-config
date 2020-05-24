@@ -1,6 +1,5 @@
 package spark_config
 
-import spark_config.Main
 import utils.test.InitSparkSessionFunSuite
 import cats.implicits._
 import org.junit.runner.RunWith
