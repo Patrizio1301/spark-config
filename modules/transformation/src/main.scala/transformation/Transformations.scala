@@ -1,0 +1,71 @@
+package transformation
+
+import transformation.transformations.column.Base64Imp.Base64Instance
+import transformation.transformations.column.CaseLetterImp.CaseLetterInstance
+import transformation.transformations.column.CatalogImp.CatalogInstance
+import transformation.transformations.column.CharacterTrimmerImp.CharacterTrimmerInstance
+import transformation.transformations.column.CommaDelimiterImp.CommaDelimiterInstance
+import transformation.transformations.column.CopyColumnImp.CopyColumnInstance
+import transformation.transformations.column.DateFormatterImp.DateFormatterInstance
+import transformation.transformations.column.ExtractInfoFromDateImp.ExtractInfoFromDateInstance
+import transformation.transformations.column.FormatterImp.FormatterInstance
+import transformation.transformations.column.HashImp.HashInstance
+import transformation.transformations.column.InsertLiteralImp.InsertLiteralInstance
+import transformation.transformations.column.IntegrityImp.IntegrityInstance
+import transformation.transformations.column.LeftPaddingImp.LeftPaddingInstance
+import transformation.transformations.column.LiteralImp.LiteralInstance
+import transformation.transformations.column.MaskImp.MaskInstance
+import transformation.transformations.column.PartialInfoImp.PartialInfoInstance
+import transformation.transformations.column.ReplaceImp.ReplaceInstance
+import transformation.transformations.column.TrimmerImp.TrimmerInstance
+import transformation.transformations.column.UpdateTimeImp.UpdateTimeInstance
+import transformation.transformations.row.ArithmeticoperationImp.ArithmeticoperationInstance
+import transformation.transformations.row.AutocastImp.AutocastInstance
+import transformation.transformations.row.CleanNullsImp.CleanNullsInstance
+import transformation.transformations.row.ConcatColumnsImp.ConcatcolumnsInstance
+import transformation.transformations.row.ConditionalImp.ConditionalInstance
+import transformation.transformations.row.DropColumnsImp.DropcolumnsInstance
+import transformation.transformations.row.FilterByFieldImp.FilterByFieldInstance
+import transformation.transformations.row.InitNullsImp.InitNullsInstance
+import transformation.transformations.row.OffsetColumnImp.OffsetColumnInstance
+import transformation.transformations.row.RegexCaseColumnImp.RegexcasecolumnInstance
+import transformation.transformations.row.RegexColumnImp.RegexcolumnInstance
+import transformation.transformations.row.RenameColumnsImp.RenamecolumnsInstance
+import transformation.transformations.row.SelectColumnsImp.SelectcolumnsInstance
+import transformation.transformations.row.SqlFilterImp.SqlfilterInstance
+
+object Transformations
+  extends ArithmeticoperationInstance
+    with AutocastInstance
+    with CleanNullsInstance
+    with ConcatcolumnsInstance
+    with ConditionalInstance
+    with DropcolumnsInstance
+    with FilterByFieldInstance
+    with InitNullsInstance
+    //      with JointransformationInstance
+    with OffsetColumnInstance
+    with RegexcasecolumnInstance
+    with RegexcolumnInstance
+    with RenamecolumnsInstance
+    with SelectcolumnsInstance
+    with SqlfilterInstance
+    with Base64Instance
+    with CaseLetterInstance
+    with CatalogInstance
+    with CharacterTrimmerInstance
+    with CommaDelimiterInstance
+    with CopyColumnInstance
+    with DateFormatterInstance
+    with ExtractInfoFromDateInstance
+    with FormatterInstance
+    with HashInstance
+    with InsertLiteralInstance
+    with IntegrityInstance
+    with LeftPaddingInstance
+    with LiteralInstance
+    with MaskInstance
+    with PartialInfoInstance
+    with ReplaceInstance
+    with TrimmerInstance
+    with UpdateTimeInstance
