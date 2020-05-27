@@ -9,6 +9,9 @@ import output.outputs.OutputUtils
 import transformation.transformations.TransformationUtils
 import cats.implicits._
 import transformation.errors.TransformationError
+import input.Inputs._
+import output.Outputs._
+import transformation.Transformations._
 
 object Main {
   def main(path: String): Unit = {

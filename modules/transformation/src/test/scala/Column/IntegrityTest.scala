@@ -28,7 +28,7 @@ class IntegrityTest extends InitSparkSessionFunSuite with GivenWhenThen with Mat
 
     val dfResult = Integrity(
       field = FIELD_1,
-      path = "src/test/resources/transformation.transformations/integrity",
+      path = "modules/transformation/src/test/resources/integrity",
       default = "00"
     ).transform(df)
 
@@ -52,7 +52,7 @@ class IntegrityTest extends InitSparkSessionFunSuite with GivenWhenThen with Mat
 
     val dfResult = Integrity(
       field = FIELD_1,
-      path = "src/test/resources/transformation.transformations/integrity",
+      path = "modules/transformation/src/test/resources/integrity",
       default = null
     ).transform(df)
 
