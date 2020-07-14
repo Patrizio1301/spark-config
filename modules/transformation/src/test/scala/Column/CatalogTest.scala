@@ -26,7 +26,7 @@ class CatalogTest extends InitSparkSessionFunSuite with GivenWhenThen with Match
     val df = createDataFrame(content, inputSchema(1, StringType))
 
     val dfResult = Catalog(
-      path = "src/test/transformation.transformations/resources/dictionary.txt",
+      path = "modules/transformation/src/test/resources/dictionary.txt",
       field = FIELD_1
     ).transform(df)
 
