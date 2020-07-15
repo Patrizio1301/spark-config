@@ -13,6 +13,7 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-core" % "2.0.0-RC1",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.1.0",
   "com.github.pureconfig" %% "pureconfig" % "0.12.3",
+  "com.crealytics" %% "spark-excel" % "0.8.3",
   "org.scalatest" %% "scalatest" % "3.0.8",
   "org.tensorflow" %% "spark-tensorflow-connector" % "1.15.0",
   "junit" % "junit" % "4.13-beta-1")

@@ -15,11 +15,27 @@ final case class Csv
   path: String
 ) extends Inputs
 
+final case class Excel
+(
+  path: String,
+  sheetName: String,
+  useHeader: String = "true",
+  treatEmptyValuesAsNulls: String ="false",
+  inferSchema: String = "false",
+  addColorColumns: String = "false"
+  //startColumn: String = 0,
+  //endColumn: String = 99,
+  //timestampFormat: String = "MM-dd-yyyy HH:mm:ss",
+  //maxRowsInMemory: String = 20,
+  //excerptSize: String = 10
+) extends Inputs
+
 
 final case class TKRecords
 (
   path: String
 ) extends Inputs
+
 
 object InputUtils extends InputUtils
 
